@@ -106,7 +106,7 @@ function get_describelayer($url){
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-    <a href="/"><img src="https://maestriageomaticadotorg.files.wordpress.com/2014/04/maestria-01p.jpg"/></a>
+    <a href="/"><img src="maestria-01p.jpg"/></a>
     <div class="header"><h1>
       <?php
       $bienvenido = "Curso 8: Web Map Service (WMS)";
