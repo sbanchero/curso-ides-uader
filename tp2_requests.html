@@ -1,0 +1,131 @@
+<!--
+********************************************************************************
+ * Curso 8: Infraestructura de datos espaciales y mapas interactivos en línea
+ * Año: 2017
+ * Autor: Banchero, Santiago 
+ * Versión: 0.1
+********************************************************************************
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Curso 8: TP2 Servicios de Interoperabilidad</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+    <link type='text/css' rel='stylesheet' href='../style.css'/>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Curso 8: TP2 Servicios de Interoperabilidad</h1>
+        <span><b>Por: </b> Banchero, Santiago</span>
+    </class>
+    <p>En este archivo están todos los request de los diferentes servicios de interoperabilidad para que puedan copiar y pegar sin problemas.</p>
+
+    <h2>Web Map Services (<a href="http://docs.geoserver.org/stable/en/user/services/wms/reference.html" target="_blank">WMS</a>)</h2>
+    
+    <ul>
+    <li> GetCapabilities
+        <ul>
+            <!-- GetCapabilities -->
+            <li id="p1">Petición 1<br/><pre>http://wms.ign.gob.ar/geoserver/wms?service=WMS&request=GetCapabilities&version=1.1.1</pre></li>
+            <li id="p2">Petición 2<br/><pre>https://aswe.santafe.gov.ar/idesf/wms?service=WMS&version=1.1.1&request=GetCapabilities</pre></li>
+        </ul>
+    </li>
+    <li>GetMap
+        <ul>
+            <!-- GetMap -->
+            <li id="p3">Petición 3<br/><pre>http://wms.ign.gob.ar/geoserver/ideign/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=ideign%3ADEPARTAMENTOS&STYLES&SRS=EPSG%3A4326&WIDTH=551&HEIGHT=768&BBOX=-76.04736328125%2C-55.8984375%2C-51.83349609375%2C-22.1484375</pre></li>
+            <li id="p4">Petición 4<br/><pre>https://geonode.senasa.gob.ar/geoserver/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&LAYERS=geonode%3Adeptos_indec_senasa&CRS=EPSG%3A4326&STYLES=&FORMAT_OPTIONS=dpi%3A98&WIDTH=2003&HEIGHT=1002&BBOX=-51.617884164157985%2C-104.55862672735373%2C-11.254115835842018%2C-23.871373272646274</pre></li>
+            <li id="p5">Petición 5<br/><pre>http://geointa.inta.gov.ar/geoparana/ows?SERVICE=WMS&&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/svg&TRANSPARENT=true&LAYERS=suelos%3Acarta_suelos_er&WIDTH=256&HEIGHT=256&CRS=EPSG%3A3857&STYLES=&BBOX=-6535671.666495711%2C-3796168.572754994%2C-6496535.9080137005%2C-3757032.814272984</pre></li>
+            <li id="p6">Petición 6<br/><pre>http://wms.ign.gob.ar/geoserver/ideign/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=application%2Fopenlayers&TRANSPARENT=true&LAYERS=ideign%3ADEPARTAMENTOS&STYLES&SRS=EPSG%3A4326&WIDTH=551&HEIGHT=768&BBOX=-76.04736328125%2C-55.8984375%2C-51.83349609375%2C-22.1484375</pre></li>
+        </ul>
+	</li>
+    <li>GetFeatureInfo
+        <ul>
+            <!-- GetFeatureInfo -->
+            <li id="p7">Petición 7<br/><pre>http://geo2.ambiente.gob.ar/geoserver/wms?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&BBOX=-64.788605%2C-38.870078%2C-55.083206%2C-22.415892&SERVICE=WMS&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=areas_protegidas%3Areservas_provinciales&FEATURE_COUNT=50&Layers=areas_protegidas%3Areservas_provinciales&WIDTH=302&HEIGHT=512&srs=EPSG%3A4326&version=1.1.1&x=239&y=170</pre></li>
+            <li id="p8">Petición 8<br/><pre>http://geo2.ambiente.gob.ar/geoserver/wms?REQUEST=GetFeatureInfo&EXCEPTIONS=application%2Fvnd.ogc.se_xml&BBOX=-64.788605%2C-38.870078%2C-55.083206%2C-22.415892&SERVICE=WMS&INFO_FORMAT=text%2Fhtml&QUERY_LAYERS=areas_protegidas%3Areservas_provinciales,suelos:tierra_s_h_4326&FEATURE_COUNT=50&Layers=areas_protegidas%3Areservas_provinciales,suelos:tierra_s_h_4326&WIDTH=302&HEIGHT=512&srs=EPSG%3A4326&version=1.1.1&x=239&y=170</pre></li>
+        </ul>
+    </li>
+    <li>GetLegendGraphic
+        <ul>
+            <!-- GetFeatureInfo -->
+            <li id="p9">Petición 9<br/><pre>https://geonode.senasa.gob.ar/geoserver/wms?request=GetLegendGraphic&format=image/png&WIDTH=20&HEIGHT=20&LAYER=geonode:centros_regionales_2014_1_1</pre></li>
+            <li id="p10">Petición 10<br/><pre>http://geointa.inta.gov.ar/geoserversf/wms?</pre></li>
+        </ul>
+	</li>
+    </ul>
+    
+    <h2>Web Feature Service (<a href="http://docs.geoserver.org/stable/en/user/services/wfs/reference.html" target="_blank">WFS</a>)</h2>
+    
+    <ul>
+        <li> GetCapabilities
+            <!-- GetCapabilities -->
+            <ul>
+                <li id="p11">Petición 11<br/><pre>http://wms.geointa.inta.gob.ar/geocordoba/wfs?request=GetCapabilities&service=WFS</pre></li>
+            </ul>
+        
+        </li>
+        
+        <li> DescribeFeatureType
+            <!-- DescribeFeatureType -->
+            <ul>
+                <li id="p12">Petición 12<br/><pre>http://wms.geointa.inta.gob.ar/geocordoba/wfs?service=wfs&request=DescribeFeatureType</pre></li>
+           
+            </ul>
+        
+        </li>
+        
+        <li> GetFeature
+            <!-- GetFeature -->
+            <ul>
+                <li id="p13">Petición 13<br/><pre>http://wms.ign.gob.ar/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=ideign:DEPARTAMENTOS</pre></li>
+            </ul>
+        
+        </li>
+        
+        
+    </ul>
+        
+    <h2>Web Coverage Service (<a href="http://docs.geoserver.org/stable/en/user/services/wcs/reference.html" target="_blank">WCS</a>)</h2>
+    
+    <ul>
+        <li> GetCapabilities
+            <!-- GetCapabilities -->
+            <ul>
+                <li id="p14">Petición 14<br/><pre>http://geosalta.inta.gob.ar/geoserver/wcs?service=WCS&request=GetCapabilities</pre></li>
+            </ul>
+        
+        </li>
+        
+        <li> DescribeCoverage
+            <!-- DescribeCoverage -->
+            <ul>
+                <li id="p15">Petición 15<br/><pre>http://geosalta.inta.gob.ar/geoserver/wcs?service=WCS&request=DescribeCoverage&version=1.0.0&COVERAGE=geosalta:ip_edafico</pre></li>
+           
+            </ul>
+        
+        </li>
+        
+        <li> GetCoverage
+            <!-- GetCoverage -->
+            <ul>
+                <li id="p16">Petición 16<br/><pre>http://geosalta.inta.gob.ar/geoserver/wcs?service=WCS&VERSION=1.0.0&REQUEST=GetCoverage&coverage=geosalta:ip_edafico&CRS=EPSG:4326&BBOX=-65.31,-23.63,-64.33,-23.14&WIDTH=1042&HEIGHT=529&FORMAT=GeoTIFF</pre></li>
+            </ul>
+        
+        </li>
+        
+        
+    </ul>
+    
+    
+</body>
+
+</html>
+
+
+
