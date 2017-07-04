@@ -106,14 +106,14 @@ function get_describelayer($url){
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-    <a href="/"><img src="maestria-01p.jpg"/></a>
+    <a href="/"><img src="/tp2/maestria-01p.jpg"/></a>
     <div class="header"><h1>
       <?php
       $bienvenido = "Curso 8: Web Map Service (WMS)";
       echo $bienvenido;
       ?>
     </h1></div>
-    <form action="/wms.php" id="usrform" method="POST">
+    <form action="/tp2/wms.php" id="usrform" method="POST">
     <input type="submit">
     </form>
     URL Request

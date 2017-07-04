@@ -68,14 +68,14 @@ parse_str($query_str, $query_params);
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-    <a href="/"><img src="maestria-01p.jpg"/></a>
+    <a href="/"><img src="/tp2/maestria-01p.jpg"/></a>
     <div class="header"><h1>
       <?php
       $bienvenido = "Web Coverage Service (WCS)";
       echo $bienvenido;
       ?>
     </h1></div>
-    <form action="/wcs.php" id="usrform" method="POST">
+    <form action="/tp2/wcs.php" id="usrform" method="POST">
     <input type="submit">
     </form>
     URL Request
