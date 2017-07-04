@@ -62,9 +62,9 @@ parse_str($query_str, $query_params);
   <head>
     <link type='text/css' rel='stylesheet' href='style.css'/>
     <title>UADER - Curso 8: Web Coverage Service (WCS)</title>
-    <link rel="stylesheet" href="/highlight/styles/default.css">
-    <script src="/highlight/highlight.pack.js"></script>
-    <script src="/highlight/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/tp2/highlight/styles/default.css">
+    <script src="/tp2/highlight/highlight.pack.js"></script>
+    <script src="/tp2/highlight/jquery-3.2.1.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
